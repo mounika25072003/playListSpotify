@@ -1,14 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.css'
-import App from './App.jsx'
-import {StateProvider} from './utils/StateProvider'
-import reducer, {initialState} from './utils/Reducer'
+import {BrowserRouter} from 'react-router-dom'
+
+import App from './App'
+// import Player from './components/Player'
+
 ReactDOM.render(
   <React.StrictMode>
-    <StateProvider initialState={initialState} reducer={reducer}>
+    <BrowserRouter>
       <App />
-    </StateProvider>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root'),
 )

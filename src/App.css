@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: 'Roboto';
 }
 
 body {
@@ -9,4 +10,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.desktop-common-component {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .desktop-common-component {
+    display: flex;
+  }
 }
